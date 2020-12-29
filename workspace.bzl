@@ -5,8 +5,8 @@ This module contains workspace definitions for building and using libedgetpu.
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 load("@bazel_tools//tools/build_defs/repo:utils.bzl", "maybe")
 
-TENSORFLOW_COMMIT = "f394a768719a55b5c351ed1ecab2ec6f16f99dd4"
-TENSORFLOW_SHA256 = "cb286abee7ee9cf5c8701d85fcc88f0fd59e72492ec4f254156de486e3e905c1"
+TENSORFLOW_COMMIT = "cba7124725268b5eaf83bb0ca63551fbf35aac54"
+TENSORFLOW_SHA256 = "cacb8e5094ea8a1fd4a05dd977ebe294f0be846a9ad9c55822f6f0ef5c0b3ebe"
 
 IO_BAZEL_RULES_CLOSURE_COMMIT = "308b05b2419edb5c8ee0471b67a40403df940149"
 IO_BAZEL_RULES_CLOSURE_SHA256 = "5b00383d08dd71f28503736db0500b6fb4dda47489ff5fc6bed42557c07c6ba9"
@@ -25,7 +25,7 @@ def libedgetpu_dependencies(
         http_archive,
         name = "org_tensorflow",
         urls = [
-            "https://github.com/tensorflow/tensorflow/archive/" + tensorflow_commit + ".tar.gz",
+            "https://github.com/ricardodeazambuja/tensorflow/archive/" + tensorflow_commit + ".tar.gz",
         ],
         sha256 = tensorflow_sha256,
         strip_prefix = "tensorflow-" + tensorflow_commit,
