@@ -30,6 +30,9 @@ Build Linux binaries inside Docker container (works on Linux and macOS):
 $ DOCKER_CPUS="k8 armv7a aarch64" DOCKER_TARGETS=libedgetpu make docker-build
 ```
 
+Build for RPI Zero:  
+https://github.com/ricardodeazambuja/libedgetpu/releases/tag/rpi0_tflite_edgetpu
+
 All built binaries go to the `out` directory.
 
 ## Support
