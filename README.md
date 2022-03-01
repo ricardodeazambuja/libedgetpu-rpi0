@@ -1,3 +1,7 @@
+All my modifications are documented here:
+* https://github.com/ricardodeazambuja/libedgetpu-rpi0/releases/tag/rpi0_tflite_edgetpu
+
+
 # Edge TPU runtime library (libedgetpu)
 
 This repo contains the source code for the userspace
